@@ -30,16 +30,17 @@ const FrenchAlphabets = () => {
 
     const playSound = (letter) => {
         const speech = new SpeechSynthesisUtterance(letter);
-        speech.lang = "fr-FR";  // French language
-        speech.rate = 0.9;      // Slow down for clear pronunciation
-        speech.pitch = 1.1;     // Slightly softer tone
-
-        // Select a female French voice if available
+        speech.lang = "fr-FR";  // Set language to French
+        speech.rate = 0.9;      
+        speech.pitch = 1.1;     
+    
+        // Get available voices and select a French voice
         const voices = window.speechSynthesis.getVoices();
-        speech.voice = voices.find(voice => voice.lang === "fr-FR" && voice.name.includes("Female"));
-
+        speech.voice = voices.find(voice => voice.lang === "fr-FR") || voices[0];
+    
         window.speechSynthesis.speak(speech);
     };
+    
 
 
     return (
@@ -47,7 +48,7 @@ const FrenchAlphabets = () => {
             <h1 className="quote">Alphabets</h1>
             <div className="alphabet-container">
                 {alphabets.map((alphabet, index) => (
-                    <button key={index} className="alphabet-box" onClick={() => playSound(alphabet.sound)}>
+                    <button key={index} className="alphabet-box" onClick={() => playSound(alphabet.letter)}>
                         <h3>{alphabet.letter}</h3>
                     </button>
                 ))}

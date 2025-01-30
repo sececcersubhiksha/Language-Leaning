@@ -176,7 +176,7 @@
   height: 80px;
   width: 100vw;
   position: absolute;
-  top: 50px;
+  top: 70px;
   background-color: ghostwhite;
   text-align: center;
 }
@@ -193,6 +193,7 @@
   justify-content: center;
   gap: 80px 150px;
   position: relative;
+  top: 20px;
   bottom: 30px;
   left: 340px;
   width: 100%;
@@ -258,12 +259,20 @@
   background-image: url("https://cdn.pixabay.com/photo/2021/02/27/21/16/plain-background-6055825_1280.jpg");
   background-size: cover;
   background-attachment: fixed;
-  height: 1300px; 
+  min-height: 100vh; 
   width: 100vw;
   position: absolute;
   top: 0px;
   left: 0px;
+  right: 0px;
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 
 .platforms{
   display: flex;
@@ -299,50 +308,60 @@
   background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yMjJiYXRjaDQtbWluZC0wM18xXzIuanBn.jpg");
   background-size: cover;
   background-attachment: fixed;
-  height: 1300px; 
+  min-height: 100vh; 
   width: 100vw;
   position: absolute;
   top: 0px;
+  left: 0px;
+  right: 0px;
 }
 
 .german-background{
   background-image: url("https://www.shutterstock.com/image-photo/peach-pink-rose-beige-abstract-600nw-2291633069.jpg");
   background-size: cover;
   background-attachment: fixed;
-  height: 1300px; 
+  min-height: 100vh; 
   width: 100vw;
   position: absolute;
   top: 0px;
+  left: 0px;
+  right: 0px;
 }
 
 .italian-background{
   background-image: url("https://img.freepik.com/free-photo/violet-abstract-watercolour-macro-texture-background_23-2148300805.jpg");
   background-size: cover;
   background-attachment: fixed;
-  height: 1300px; 
+  min-height: 100vh; 
   width: 100vw;
   position: absolute;
   top: 0px;
+  left: 0px;
+  right: 0px;
 }
 
 .japanese-background{
-  background-image: url("https://i.pinimg.com/originals/2f/ae/c3/2faec31dce9f4c52e84f467d896471d8.jpg");
+  background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zMDktYWRqLTE0LmpwZw.jpg");
   background-size: cover;
   background-attachment: fixed;
-  height: 2020px; 
+  min-height: 100vh; 
   width: 100vw;
   position: absolute;
   top: 0px;
+  left: 0px;
+  right: 0px;
 }
 
 .spanish-background{
-  background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAyL3Jhd3BpeGVsX29mZmljZV8yNl9hX21pbmltYWxfYW5kX3NpbXBsZV9jbGVhcl9iYWNrZ3JvdW5kX2luX3RoZV9jZTc5MjEyYi1jNjJlLTRmM2UtYTUxMy1mYWE2Y2Y0MWM0ODNfMS5qcGc.jpg");
+  background-image: url("https://img.freepik.com/premium-photo/light-green-yellow-backgrounds-abstract-textured-image-by-rawpixel_53876-412104.jpg");
   background-size: cover;
   background-attachment: fixed;
-  height: 1300px; 
+  min-height: 100vh; 
   width: 100vw;
   position: absolute;
   top: 0px;
+  left: 0px;
+  right: 0px;
 }
 
 .quote{
@@ -354,7 +373,7 @@
 
 .basics{
   position: relative;
-  top: 10px;
+  top: 0px;
   left: 585px;
   height: 60px;
   width: 400px;
@@ -409,7 +428,7 @@ pre{
 
 .website{
   position: relative;
-  top: 10px;
+  top: 0px;
   left: 585px;
   height: 60px;
   width: 400px;

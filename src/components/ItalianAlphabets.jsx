@@ -42,7 +42,7 @@ const ItalianAlphabets = () => {
             <h1 className="quote">Alphabets</h1>
             <div className="alphabet-container">
                 {alphabets.map((alphabet, index) => (
-                    <button key={index} className="alphabet-box" onClick={() => playSound(alphabet.sound)}>
+                    <button key={index} className="alphabet-box" onClick={() => playSound(alphabet.letter)}>
                         <h3>{alphabet.letter}</h3>
                     </button>
                 ))}

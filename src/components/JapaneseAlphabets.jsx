@@ -50,23 +50,20 @@ const JapaneseAlphabets = () => {
 
     const playSound = (letter) => {
         const speech = new SpeechSynthesisUtterance(letter);
-        speech.lang = "ja-JP";  // Japanese language
-        speech.rate = 1;        // Normal rate for better clarity
-        speech.pitch = 1;       // Natural tone
-
-        // Select a Japanese voice if available
+        speech.lang = "ja-JP";
+    
         const voices = window.speechSynthesis.getVoices();
-        speech.voice = voices.find(voice => voice.lang === "ja-JP");
-
+        speech.voice = voices.find(voice => voice.lang === "ja-JP") || voices[0];
+    
         window.speechSynthesis.speak(speech);
-    };
+    };    
 
     return (
         <div className="japanese-background">
             <h1 className="quote">Alphabets</h1>
             <div className="alphabet-container">
                 {hiragana.map((alphabet, index) => (
-                    <button key={index} className="alphabet-box" onClick={() => playSound(alphabet.sound)}>
+                    <button key={index} className="alphabet-box" onClick={() => playSound(alphabet.letter)}>
                         <h3>{alphabet.letter}</h3>
                     </button>
                 ))}
