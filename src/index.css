@@ -1,0 +1,433 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.box {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  position: relative;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.home-bg {
+  background-image: url('https://timesbridge.com/wp-content/uploads/2021/07/iStock-Online-Language-Learning.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  height: 100vh;
+  margin: 0;
+  animation: slideUp 1.5s ease-out;
+}
+
+
+.plain-bg {
+  background-color: #f4f4f9;
+  color: black;
+  height: 100vh;
+  margin: 0;
+}
+
+.backtohome {
+  background-color: aqua;
+  color: black;
+  border-radius: 2px solid black;
+  cursor: 'pointer';
+  height: 25px;
+  width: 120px;
+  padding: 4px;
+  border-radius: 2px;
+}
+
+.signup {
+  background-color: aqua;
+  color: black;
+  border-radius: 2px solid black;
+  font-weight: 'bold';
+  font-size: large;
+  height: 30px;
+  width: 120px;
+  position: absolute;
+  top: 300px;
+  left: 200px;
+  padding-top: 10px;
+  padding-bottom: 28px;
+  padding-left: 12px;
+  padding-right: 10px;
+  border-radius: 20px;
+}
+
+.signup:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.login {
+  background-color: aqua;
+  color: black;
+  border-radius: 2px solid black;
+  font-weight: 'bold';
+  font-size: large;
+  height: 30px;
+  width: 120px;
+  position: absolute;
+  top: 300px;
+  left: 375px;
+  padding-top: 10px;
+  padding-bottom: 28px;
+  padding-left: 12px;
+  padding-right: 10px;
+  border-radius: 20px;
+}
+
+.login:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.content {
+  position: absolute;
+  top: 200px;
+  left: 105px;
+  font-size: x-large;
+}
+
+.containerstyle {
+  background-image: url("https://img.freepik.com/free-vector/gradient-blue-background_23-2149317850.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.form-box {
+  background: #ffffffe6;
+  border-radius: 8px;
+  padding: 40px;
+  height: 500px;
+  width: 400px;
+  position: relative;
+  top: 90px;
+  left: 25px;
+}
+
+.form-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.submit-btn,
+.backtohome-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover,
+.backtohome-btn:hover {
+  background-color: #0056b3;
+}
+
+.header {
+  height: 80px;
+  width: 100vw;
+  position: absolute;
+  top: 50px;
+  background-color: ghostwhite;
+  text-align: center;
+}
+
+.select-language {
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px 150px;
+  position: relative;
+  bottom: 30px;
+  left: 340px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.language-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  text-align: center;
+  position: relative;
+  top: 200px;
+}
+
+
+.flag {
+  width: 100px;
+  height: 60px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  top: 10px;
+}
+
+.language-button {
+  font-family: "Arial", sans-serif;
+  font-size: 100%;
+  padding: 8px 12px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: azure;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  top: 20px;
+}
+
+.language-button:hover {
+  background-color: antiquewhite;
+  transform: scale(1.1);
+}
+
+.language-bg{
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/165/275/593/colorful-windows-10-gradient-minimalism-soft-gradient-hd-wallpaper-preview.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
+}
+
+.top{
+  text-align: center;
+  font-size: xx-large;
+  position: relative;
+  top: 20px;
+}
+
+.english-background {
+  background-image: url("https://cdn.pixabay.com/photo/2021/02/27/21/16/plain-background-6055825_1280.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 1300px; 
+  width: 100vw;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.platforms{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px 110px;
+  position: relative;
+  bottom: 30px;
+  left: 340px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.platform-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 165px;
+  text-align: center;
+  position: relative;
+  top: 80px;
+  background-color: cornsilk;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.platform-container:hover{
+  transform: scale(1.1);
+}
+
+.french-background{
+  background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yMjJiYXRjaDQtbWluZC0wM18xXzIuanBn.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 1300px; 
+  width: 100vw;
+  position: absolute;
+  top: 0px;
+}
+
+.german-background{
+  background-image: url("https://www.shutterstock.com/image-photo/peach-pink-rose-beige-abstract-600nw-2291633069.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 1300px; 
+  width: 100vw;
+  position: absolute;
+  top: 0px;
+}
+
+.italian-background{
+  background-image: url("https://img.freepik.com/free-photo/violet-abstract-watercolour-macro-texture-background_23-2148300805.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 1300px; 
+  width: 100vw;
+  position: absolute;
+  top: 0px;
+}
+
+.japanese-background{
+  background-image: url("https://i.pinimg.com/originals/2f/ae/c3/2faec31dce9f4c52e84f467d896471d8.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 2020px; 
+  width: 100vw;
+  position: absolute;
+  top: 0px;
+}
+
+.spanish-background{
+  background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAyL3Jhd3BpeGVsX29mZmljZV8yNl9hX21pbmltYWxfYW5kX3NpbXBsZV9jbGVhcl9iYWNrZ3JvdW5kX2luX3RoZV9jZTc5MjEyYi1jNjJlLTRmM2UtYTUxMy1mYWE2Y2Y0MWM0ODNfMS5qcGc.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 1300px; 
+  width: 100vw;
+  position: absolute;
+  top: 0px;
+}
+
+.quote{
+  text-align: center;
+  font-size: 300%;
+  position: relative;
+  right: 20px;
+}
+
+.basics{
+  position: relative;
+  top: 10px;
+  left: 585px;
+  height: 60px;
+  width: 400px;
+  font-size: xx-large;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid green;
+  background-color: cornsilk;
+  display: flex;
+  justify-content: center;
+}
+
+.basics:hover{
+  transform: scale(1.1);
+}
+
+.alphabet-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px 60px;
+  position: relative;
+  bottom: 50px;
+  left: 340px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.alphabet-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  position: relative;
+  top: 80px;
+  background-color: cornsilk;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  padding-bottom: 135px;
+  font-size: xx-large;
+}
+.alphabet-box:hover{
+  transform: scale(1.05);
+}
+
+pre{
+  font-size: x-large;
+}
+
+.website{
+  position: relative;
+  top: 10px;
+  left: 585px;
+  height: 60px;
+  width: 400px;
+  font-size: xx-large;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid green;
+  background-color: cornsilk;
+}
+
+.website:hover{
+  transform: scale(1.1);
+}
+
+.pronounce{
+  text-align: center;
+}
+
+.website-name{
+  text-align: center;
+}
