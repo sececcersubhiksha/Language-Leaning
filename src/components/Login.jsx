@@ -20,7 +20,7 @@ const Login = ({ navigateTo }) => {
     }
   
     try {
-      const response = await axios.post('http://localhost:3000/login', {
+      const response = await axios.post('https://language-leaning-backend-1.onrender.com/login', {
         email,
         password,
       });

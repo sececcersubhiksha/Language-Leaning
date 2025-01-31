@@ -24,7 +24,7 @@ const Signup = ({ navigateTo }) => {
     }
 
     try {
-      await axios.post('http://localhost:3000/signup', {
+      await axios.post('https://language-leaning-backend-1.onrender.com/signup', {
         name,
         email,
         password,
