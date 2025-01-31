@@ -12,7 +12,6 @@ const Language = ({ navigateTo }) => {
     <>
       <div className="language-bg">
         <div className="header">
-          <button className="logout" onClick={() => {navigateTo('home')}}>Logout</button>
           <h2 className="select-language"><b>Select a language you want to learn</b></h2>
         </div>
         <div className="languages">

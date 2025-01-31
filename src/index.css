@@ -450,13 +450,3 @@ pre{
 .website-name{
   text-align: center;
 }
-
-.logout{
-  height: 20px;
-  width: 50px;
-  padding: 10px;
-  border-radius: 10px;
-  position: absolute;
-  top: 5px;
-  right: 5px;
-}
